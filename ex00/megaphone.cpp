@@ -6,16 +6,16 @@
 /*   By: blevrel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 09:15:36 by blevrel           #+#    #+#             */
-/*   Updated: 2022/10/26 09:16:13 by blevrel          ###   ########.fr       */
+/*   Updated: 2022/11/22 11:42:41 by blevrel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <iostream>
 
 int main(int argc, char **argv)
 {
-    int     i;
-    size_t  j;
+    int     	i;
+    size_t  	j;
+	std::string str;
 
     i = 1;
     if (argc == 1)
@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     {
         while(argv[i])
         {
-            std::string str(argv[i]);
+            str = argv[i];
             j = 0;
             while (j < str.length())
             {
